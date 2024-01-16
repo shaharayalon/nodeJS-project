@@ -1,0 +1,188 @@
+### GET All users:
+
+GET http://localhost:8080/api/v1/users
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTcwMjgwMTE0MH0.WK9KUhZL0SiTb3UZa9VXG5NvgT5qHmGOSobmIDjzoyw
+
+ 
+
+### Add a user:
+
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "name": {
+    "first": "benny",
+    "last": "kozoshvili"
+  },
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "country": "Israel",
+    "houseNumber": 20,
+    "zip": "12345"
+  },
+  "image": {
+    "alt": "user-profile",
+    "url": "https://picsum.photos/200/300"
+  },
+  "phone": "050-8123091",
+  "email": "bennybenny@gmail.com",
+  "isBusiness": true,
+  "password": "123456aA!"
+}
+
+### Login:
+POST http://localhost:8080/api/v1/users/login
+Content-Type: application/json
+
+{
+  "email": "bennybenny@gmail.com",
+  "password": "123456aA!"
+}
+
+
+### GET user by id
+
+GET http://localhost:8080/api/v1/users/658c43f13f06a10c5b79e39a
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlbm55YmVubnlAZ21haWwuY29tIiwiaWF0IjoxNzA1MzM5NTc2fQ.XXFQXnS9YvxxKgHPY7gcYQFdPZWA0STXCWliXIZPW5U
+
+
+
+
+### PUT edit user:
+PUT http://localhost:8080/api/v1/users/658c43f13f06a10c5b79e39a
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlbm55YmVubnlAZ21haWwuY29tIiwiaWF0IjoxNzA1MzM5NTc2fQ.XXFQXnS9YvxxKgHPY7gcYQFdPZWA0STXCWliXIZPW5U
+Content-Type: application/json
+
+{
+  "name": {
+    "first": "benny",
+    "last": "kososhvily"
+  },
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "country": "Israel",
+    "houseNumber": 20,
+    "zip": "12345"
+  },
+  "image": {
+    "alt": "user-profile",
+    "url": "https://picsum.photos/200/300"
+  },
+  "phone": "050-8123091",
+  "email": "bennybenny@gmail.com",
+  "isBusiness": true,
+  "password": "123456aA!"
+}
+
+
+
+### update only the business
+
+PATCH  http://localhost:8080/api/v1/users/658af164e7e52d4103d065b0
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhdmlkQGdtYWlsLmNvbSIsImlhdCI6MTcwMzYwNDYwMn0.rHrjl6-4UWF4pOoccYZ4tGACn53KgQFCgxTJsonDPEg
+Content-Type: application/json
+
+{
+  "isBusiness": true
+}
+
+### DELETE user:
+DELETE  http://localhost:8080/api/v1/users/658af164e7e52d4103d065b0
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRhdmlkQGdtYWlsLmNvbSIsImlhdCI6MTcwMzYwNDYwMn0.rHrjl6-4UWF4pOoccYZ4tGACn53KgQFCgxTJsonDPEg
+
+
+
+
+
+
+### create new card
+POST http://localhost:8080/api/v1/cards
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkJydWNlZ2hnaDFAYmF0Y2F2ZS5jb20iLCJpYXQiOjE3MDM0MzM4Nzl9.6ujT9bMfn_dVvucs8OkWNOUonAGaIH-MZcdbVCDJOuk
+Content-Type: application/json
+
+{
+"title":"card wow",
+"subtitle":"the card number wow",
+"description":"walla walla walla",
+"phone":"054-8339879",
+"email":"cardwow@gmail.com",
+"address":{
+  "street": "123 Main St",
+    "city": "Anytown",
+    "country": "Israel",
+    "houseNumber": 20,
+    "zip": "12345"
+}
+}
+
+
+### GET All cards:
+
+GET http://localhost:8080/api/v1/cards
+
+
+### GET my cards
+
+GET http://localhost:8080/api/v1/cards/my-cards
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkJydWNlZ2hnaDFAYmF0Y2F2ZS5jb20iLCJpYXQiOjE3MDM0MzM4Nzl9.6ujT9bMfn_dVvucs8OkWNOUonAGaIH-MZcdbVCDJOuk
+
+
+
+### GET card by id
+GET http://localhost:8080/api/v1/cards/658af10de7e52d4103d0659e
+
+
+
+### update card
+
+PUT http://localhost:8080/api/v1/cards/658c4cdf3f06a10c5b79e40f
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkJydWNlZ2hnaDFAYmF0Y2F2ZS5jb20iLCJpYXQiOjE3MDM0MzM4Nzl9.6ujT9bMfn_dVvucs8OkWNOUonAGaIH-MZcdbVCDJOuk
+Content-Type: application/json
+
+
+{
+    "title": "card bam bam",
+    "subtitle": "the card number bam bam",
+    "description": "walla walla walla",
+    "phone": "054-8339879",
+    "email": "cardwow@gmail.com",
+    "address": {
+      "city": "Anytown",
+      "state": "",
+      "country": "Israel",
+      "street": "123 Main St",
+      "houseNumber": 20,
+      "zip": "12345"
+    }
+  }
+
+
+
+### like a card
+
+PATCH  http://localhost:8080/api/v1/cards/658c4cdf3f06a10c5b79e40f
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlbm55YmVubnlAZ21haWwuY29tIiwiaWF0IjoxNzAzNjk0MTc2fQ.gJ9y-zO_EZvx2AL8yVXqKH0S5WGWPnDDmB3CptQWCDI
+Content-Type: application/json
+
+{
+  "email": "bennybenny@gmail.com"
+}
+
+
+### DELETE card
+DELETE  http://localhost:8080/api/v1/cards/658c4cdf3f06a10c5b79e40f
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkJydWNlZ2hnaDFAYmF0Y2F2ZS5jb20iLCJpYXQiOjE3MDM0MzM4Nzl9.6ujT9bMfn_dVvucs8OkWNOUonAGaIH-MZcdbVCDJOuk
+
+
+
+
+
+
+
+
+
+
+

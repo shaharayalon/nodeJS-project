@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "65784e83afc0177d530976da"
+  },
+  "name": {
+    "first": "Bruce",
+    "middle": "",
+    "last": "Wayne",
+    "_id": {
+      "$oid": "65784e83afc0177d530976db"
+    }
+  },
+  "address": {
+    "city": "Anytown",
+    "state": "",
+    "country": "Israel",
+    "street": "123 Main St",
+    "houseNumber": 20,
+    "zip": "12345",
+    "_id": {
+      "$oid": "65784e83afc0177d530976dc"
+    }
+  },
+  "image": {
+    "alt": "user-profile",
+    "url": "https://picsum.photos/200/300",
+    "_id": {
+      "$oid": "65784e83afc0177d530976dd"
+    }
+  },
+  "phone": "050-8123091",
+  "email": "Bruce4@batcave.com",
+  "password": "$2b$12$GjQHzmpsLnoWEg.IyjmJz.Bt6zRx0x7Rs1NlUsUz8boH/Wt3Yq7x6",
+  "isAdmin": false,
+  "isBusiness": false,
+  "createdAt": {
+    "$date": "2023-12-12T12:11:16.670Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657ac9c2b907dfed7e4b9917"
+  },
+  "name": {
+    "first": "Bruce",
+    "middle": "",
+    "last": "Wilis",
+    "_id": {
+      "$oid": "657ac9c2b907dfed7e4b9918"
+    }
+  },
+  "address": {
+    "city": "Anytown",
+    "state": "",
+    "country": "Israel",
+    "street": "123 Main St",
+    "houseNumber": 20,
+    "zip": "12345",
+    "_id": {
+      "$oid": "657ac9c2b907dfed7e4b9919"
+    }
+  },
+  "image": {
+    "alt": "user-profile",
+    "url": "https://picsum.photos/200/300",
+    "_id": {
+      "$oid": "657ac9c2b907dfed7e4b991a"
+    }
+  },
+  "phone": "050-8123091",
+  "email": "Bruceghgh1@batcave.com",
+  "password": "$2b$12$5hZrMjBkAeJfno701t1jzu53vVp87dtotUVPZ/B47Lx7eV65bKXFC",
+  "isAdmin": false,
+  "isBusiness": true,
+  "createdAt": {
+    "$date": "2023-12-14T09:24:10.723Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657ea32071049f495e1516bf"
+  },
+  "name": {
+    "first": "root",
+    "middle": "",
+    "last": "admin",
+    "_id": {
+      "$oid": "657ea32071049f495e1516c0"
+    }
+  },
+  "address": {
+    "city": "Anytown",
+    "state": "",
+    "country": "Israel",
+    "street": "123 Main St",
+    "houseNumber": 20,
+    "zip": "12345",
+    "_id": {
+      "$oid": "657ea32071049f495e1516c1"
+    }
+  },
+  "image": {
+    "alt": "user-profile",
+    "url": "https://picsum.photos/200/300",
+    "_id": {
+      "$oid": "657ea32071049f495e1516c2"
+    }
+  },
+  "phone": "050-8123091",
+  "email": "admin@gmail.com",
+  "password": "$2b$12$GyTIKcvr03CXNW9O6.XL6OK1/O65A29g8xC1.b7/EUxKzp2wXllV.",
+  "isAdmin": true,
+  "isBusiness": true,
+  "createdAt": {
+    "$date": "2023-12-17T07:28:30.505Z"
+  },
+  "__v": 0
+}]
